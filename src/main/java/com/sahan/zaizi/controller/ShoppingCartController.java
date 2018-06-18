@@ -10,7 +10,7 @@ public class ShoppingCartController {
 				"\n"+"Content-Disposition: form-data; name='uploadfile'; filename='diagrama.pdf'"+"\n"+"Content-Type: application/pdf"+"\n\n"+
 				"%PDF-1.7";
 		int endOfHeaderIndex = 0, beginOfHeaderIndex = 0;
-		String line, name = "tipoRelacion", tipo = "value";
+		String line, name = "hola", tipo = "value";
 		while (endOfHeaderIndex < requestContentAsString.length() && beginOfHeaderIndex > -1 && endOfHeaderIndex > -1) {
 			beginOfHeaderIndex = requestContentAsString.indexOf("------WebKitFormBoundaryZ8HCBzhVWbUANtKM", beginOfHeaderIndex);
 			endOfHeaderIndex = requestContentAsString.indexOf("\n\n", beginOfHeaderIndex);
